@@ -40,11 +40,9 @@ public class MainActivity extends AppCompatActivity {
                 viewPager.setCurrentItem(tab.getPosition());
 
                 pageAdapter.notifyDataSetChanged();
-//                if(tab.getPosition() == 0)
-//                {
-//
-//                }
 
+
+                
 
             }
 

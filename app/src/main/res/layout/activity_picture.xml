@@ -35,39 +35,61 @@
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="6dp"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="10dp"
         android:padding="2dp">
 
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="40dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_ios_24"
             android:layout_weight="1"
-            android:padding="10dp"
+            android:padding="3dp"
             android:paddingStart="20dp"
-            android:layout_marginHorizontal="15dp"
+            android:layout_marginHorizontal="5dp"
             android:background="@drawable/button_border"
-            android:id="@+id/back_btn_pic"/>
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="#075e54"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/back_btn_pic"
+            tools:ignore="RtlSymmetry" />
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="90dp"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/ic_baseline_download_24"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:paddingStart="15dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/button_border"
+            android:text="Download"
+            android:textAllCaps="false"
+            android:textColor="#075e54"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/download_btn_pic"
+            tools:ignore="RtlSymmetry" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="40dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_baseline_save_alt_24"
+            android:drawableStart="@drawable/ic_baseline_share_24"
             android:layout_weight="1"
+            android:padding="3dp"
+            android:paddingStart="20dp"
+            android:layout_marginHorizontal="5dp"
             android:background="@drawable/button_border"
-            android:id="@+id/download_btn_pic"/>
-
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:src="@drawable/ic_baseline_share_24"
-            android:layout_weight="1"
-            android:layout_marginHorizontal="15dp"
-            android:background="@drawable/button_border"
-            android:id="@+id/share_btn_pic"/>
+            android:text="Share"
+            android:textAllCaps="false"
+            android:textColor="#075e54"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/share_btn_pic"
+            tools:ignore="RtlSymmetry" />
 
 
     </LinearLayout>

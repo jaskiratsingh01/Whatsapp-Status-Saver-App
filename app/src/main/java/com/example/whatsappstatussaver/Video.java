@@ -20,7 +20,7 @@ import java.io.IOException;
 public class Video extends AppCompatActivity {
 
 
-    ImageView backBtn, downloadBtn, shareBtn;
+    Button backBtn, downloadBtn, shareBtn;
     VideoView mainVideo;
 
     @Override
@@ -75,8 +75,9 @@ public class Video extends AppCompatActivity {
 
         if(filePresent)
         {
-            downloadBtn.setImageResource(0);
-            downloadBtn.setImageResource(R.drawable.ic_baseline_check_circle_24);
+            downloadBtn.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,0,0);
+            downloadBtn.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_baseline_download_done_24,0,0,0);
+            downloadBtn.setText("Downloaded");
         }
 
 

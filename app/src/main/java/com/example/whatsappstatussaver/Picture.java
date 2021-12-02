@@ -1,6 +1,7 @@
 package com.example.whatsappstatussaver;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -28,7 +29,8 @@ import java.io.IOException;
 public class Picture extends AppCompatActivity {
 
 
-    ImageView mainImg, backBtn, downloadBtn, shareBtn;
+    ImageView mainImg;
+    Button backBtn, downloadBtn, shareBtn;
 
 
     @Override
@@ -90,8 +92,9 @@ public class Picture extends AppCompatActivity {
 
         if(filePresent)
         {
-            downloadBtn.setImageResource(0);
-            downloadBtn.setImageResource(R.drawable.ic_baseline_check_circle_24);
+            downloadBtn.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,0,0);
+            downloadBtn.setCompoundDrawablesRelativeWithIntrinsicBounds(R.drawable.ic_baseline_download_done_24,0,0,0);
+            downloadBtn.setText("Downloaded");
         }
 
 
@@ -99,9 +102,6 @@ public class Picture extends AppCompatActivity {
         downloadBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                YoYo.with(Techniques.FlipInX).duration(600).repeat(0).playOn(downloadBtn);
-
 
                 if(finalFilePresent)
                 {

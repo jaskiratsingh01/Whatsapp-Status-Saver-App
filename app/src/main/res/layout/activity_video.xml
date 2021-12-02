@@ -40,34 +40,57 @@
         android:padding="2dp">
 
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="40dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_ios_24"
             android:layout_weight="1"
             android:padding="3dp"
             android:paddingStart="20dp"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/button_border"
-            android:id="@+id/back_btn_vid"/>
+            android:text="Back"
+            android:textAllCaps="false"
+            android:textColor="#075e54"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/back_btn_vid"
+            tools:ignore="RtlSymmetry" />
 
-        <ImageView
-            android:layout_width="40dp"
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="90dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_baseline_save_alt_24"
+            android:drawableStart="@drawable/ic_baseline_download_24"
             android:layout_weight="1"
-            android:background="@drawable/button_border"
-            android:id="@+id/download_btn_vid"/>
-
-
-        <ImageView
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:src="@drawable/ic_baseline_share_24"
-            android:layout_weight="1"
+            android:padding="3dp"
+            android:paddingStart="15dp"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/button_border"
-            android:id="@+id/share_btn_vid"/>
+            android:text="Download"
+            android:textAllCaps="false"
+            android:textColor="#075e54"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/download_btn_vid"
+            tools:ignore="RtlSymmetry" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:drawableStart="@drawable/ic_baseline_share_24"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:paddingStart="20dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/button_border"
+            android:text="Share"
+            android:textAllCaps="false"
+            android:textColor="#075e54"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:id="@+id/share_btn_vid"
+            tools:ignore="RtlSymmetry" />
 
 
     </LinearLayout>
