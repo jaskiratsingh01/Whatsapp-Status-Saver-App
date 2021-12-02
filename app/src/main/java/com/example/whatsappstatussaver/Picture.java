@@ -103,6 +103,8 @@ public class Picture extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                YoYo.with(Techniques.FlipInX).duration(500).repeat(0).playOn(downloadBtn);
+
                 if(finalFilePresent)
                 {
                     Toast.makeText(getApplicationContext(),"Already Saved!",Toast.LENGTH_SHORT).show();
@@ -156,7 +158,7 @@ public class Picture extends AppCompatActivity {
         shareBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                YoYo.with(Techniques.FlipInX).duration(600).repeat(0).playOn(shareBtn);
+                YoYo.with(Techniques.FlipInX).duration(500).repeat(0).playOn(shareBtn);
 
 
                 StrictMode.VmPolicy.Builder builder = new StrictMode.VmPolicy.Builder();

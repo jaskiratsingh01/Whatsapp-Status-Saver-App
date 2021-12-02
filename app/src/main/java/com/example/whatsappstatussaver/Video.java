@@ -14,6 +14,9 @@ import android.widget.MediaController;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+import com.daimajia.androidanimations.library.Techniques;
+import com.daimajia.androidanimations.library.YoYo;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -87,6 +90,8 @@ public class Video extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                YoYo.with(Techniques.FlipInX).duration(500).repeat(0).playOn(downloadBtn);
+
                 if(filePresent)
                 {
                     Toast.makeText(getApplicationContext(),"Already Saved!",Toast.LENGTH_SHORT).show();
@@ -142,6 +147,8 @@ public class Video extends AppCompatActivity {
         shareBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                YoYo.with(Techniques.FlipInX).duration(500).repeat(0).playOn(shareBtn);
 
 
                 Intent sendIntent = new Intent(Intent.ACTION_SEND);
